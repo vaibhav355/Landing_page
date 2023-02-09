@@ -2,10 +2,13 @@ import { Card } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
 
-const Container = styled.div``;
+const Container = styled.div`
+  margin-top: 50px;
+`;
 const CardContainer = styled.div`
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 `;
 const BoxCard = styled(Card)`
   width: 300px;
@@ -26,7 +29,7 @@ const Heading = styled.h3`
 
 const Para = styled.p`
   color: #716c80;
-  font-size: 18px;
+  font-size: 15px;
 `;
 
 // Style Only for market box
@@ -54,7 +57,7 @@ const MarketHeading = styled.h3`
 
 const MarketPara = styled.p`
   color: white;
-  font-size: 18px;
+  font-size: 15px;
 `;
 
 const LinkReadMore = styled.span`
@@ -69,25 +72,34 @@ const SecondContainer = styled.div`
   align-items: center;
 `;
 const Left = styled.div``;
-const Image = styled.img``;
+const Image = styled.img`
+  width: 500px;
+  height: 500px;
+`;
 const Right = styled.div``;
 const Header = styled.div``;
-const Paragraph = styled.div``;
-const Title = styled.h3`
+
+const Title = styled.h4`
   margin: 0;
   padding: 0;
   color: #554d89;
   font-size: 28px;
 `;
+const Paragraph = styled.div`
+  width: 100%;
+  margin-top: 30px;
+`;
 const SecondPara = styled.p`
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  font-size: 14px;
   color: #716c80;
 `;
-const Footer = styled.div``;
+const ButtonContainer = styled.div`
+  margin-top: 30px;
+`;
 const BoxButton = styled.button`
-  padding: 14px 23px 14px;
+  padding: 11px 23px 14px;
   background: linear-gradient(26.57deg, #6852ed 16.67%, #ba43fc 100%);
   border-radius: 40px;
   border: none;
@@ -98,10 +110,8 @@ const BoxButton = styled.button`
 `;
 const ReadLink = styled.a`
   text-decoration: none;
-  color: black;
+  color: #554d89;
 `;
-
-
 
 const Services = () => {
   return (
@@ -148,10 +158,10 @@ const Services = () => {
             </SecondPara>
             <SecondPara>publishing packages and web.</SecondPara>
           </Paragraph>
-          <Footer>
+          <ButtonContainer>
             <BoxButton>Get started</BoxButton>
             <ReadLink href="/">Read More - </ReadLink>
-          </Footer>
+          </ButtonContainer>
         </Right>
       </SecondContainer>
     </Container>
