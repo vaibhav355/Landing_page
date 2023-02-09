@@ -1,8 +1,8 @@
-import Navbar from "./components/Navbar";
+import VideoPage from "./components/VideoPage";
 
 function App() {
   return (
-    <Navbar />
+    <VideoPage />
   );
 }
 

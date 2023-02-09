@@ -1,48 +1,48 @@
 import React from "react";
 import styled from "styled-components";
-// import Logo from "./Logo.png";
 
 const Container = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 12px;
 `;
-const Left = styled.div`
-  /* flex: 1;
-  display: flex;
-  align-items: center; */
+const Left = styled.div``;
+
+const LogoImage = styled.img`
+  height: 40px;
+  width: 40px;
 `;
 const Center = styled.ul`
   display: flex;
   list-style: none;
-  align-items: center;
-  text-align: center;
+  margin-left: 5%;
+  margin-right: 20%;
+  padding: 0;
 `;
 const MenuItem = styled.li`
-  margin: 11px;
+  margin: 0 11px 0;
   cursor: pointer;
 `;
-const Right = styled.div`
-  /* display: flex; */
-  /* justify-content: flex-end; */
-`;
+const Right = styled.div``;
 const Button = styled.button`
   padding: 11px 18px 7px;
-  margin-top: 22px;
   color: #6852ed;
   border: 1px solid #6852ed;
   border-radius: 40px;
   font-size: 14px;
   background-color: transparent;
   cursor: pointer;
-  /* justify-content: flex-end; */
 `;
 
 const Navbar = () => {
   return (
     <Container>
-      <Left>Image</Left>
+      <Left>
+        <LogoImage src="/images/Logo.png" />
+      </Left>
       <Center>
-        <MenuItem><stong>Home</stong></MenuItem>
+        <MenuItem>Home</MenuItem>
         <MenuItem>Pages</MenuItem>
         <MenuItem>Services</MenuItem>
         <MenuItem>Portfolio</MenuItem>
