@@ -5,10 +5,6 @@ import styled from "styled-components";
 // import Components
 import Services from "./Services";
 
-import SplitSection from "./SplitSection";
-import ServicesMain from "./ServicesMain";
-import Skills from "./Skills";
-
 
 const Container = styled.div`
   /* border: 2px solid red; */
